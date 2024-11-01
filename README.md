@@ -10,9 +10,24 @@ To support the objectives and scope of this analysis, the following data sources
 
 ### Tools Used
 the tools used for this project are;
-Microsoft excel for data cleaning
-SQL for query writing
-Powerbi for visualization and 
-Github for documentation
+-Microsoft excel for data cleaning
+-SQL for query writing
+-Powerbi for visualization and 
+-Github for documentation
+
+ ### Data cleaning
+  data cleaning involves several processes. to ensure data accuracy, completeness and consistency, here is a step-by-step process.
+- handling missing files
+  1. identify missing values (e.g, NULL, blank, NA).
+  2. decide on replacement stategies (e.g,  mean, median, imputation).
+  3. replace missing values
+- data normalization
+  1. standardize date formats
+  2. convert categorical variables into numerical variables
+- error detection and correction
+  1. identify errors
+  2. correct errors manually or using algorithms
+  3. verify corrections
+- data transformation
 
 
