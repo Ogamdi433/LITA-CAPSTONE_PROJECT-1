@@ -134,17 +134,17 @@ Here, i'm going to be writing some queries to extract key insights based on the 
 5   Calculate monthly sales totals for the current year
 
      ```SQL
-        SELECT DATENAME(MONTH, orderdate) AS Month, SUM(Total_sales) AS monthly_sales_total
-        FROM [dbo].[sales data)
+        SELECT DATENAME(MONTH, order_date) AS Month, SUM(Total_sales) AS monthly_sales_total
+        FROM [dbo].[sales data]
         WHERE
-        Orderdate >= DATEFROMPARTS (Year(GETDATE()),1,1)
+        Order_date >= DATEFROMPARTS (YEAR(GETDATE()), 1, 1)
         AND
-        Orderdate < DATEFROMPARTS(Year(GETDATE()), +1,1,1)
+        Order-date < DATEFROMPARTS(YEAR(GETDATE()) + 1, 1, 1)
         GROUP BY
-        DateName (Month, Orderdate)
+        DATENAME (MONTH, Order_date)
         ORDER BY
-        Month.
-        ```
+        Month
+       ```
 
 6.  Find the top 5 customers by total purchaseamount.
 
@@ -181,9 +181,16 @@ Here, i'm going to be writing some queries to extract key insights based on the 
        WHERE
        orderdate >= DATEADD(QUATER, -1, GETDATE())).
       ```
-     
-     
-        
+
+
+   ### POWER BI
+
+   Here, i'm a going to create a dashboard that visualizes the insights found in excel and SQL. The dashboard should indicate a sales overview, top-performing products, and regional breakdowns.
+
+    ### Sales OverView
+
+   ![sales overview](https://github.com/user-attachments/assets/e53f1652-9e7f-405b-ac68-128cebe96bbf)
+
 
 
 
