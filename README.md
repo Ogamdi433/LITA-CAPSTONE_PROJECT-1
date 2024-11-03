@@ -192,6 +192,9 @@ Here, i'm going to be writing some queries to extract key insights based on the 
    ![sales overview](https://github.com/user-attachments/assets/e53f1652-9e7f-405b-ac68-128cebe96bbf)
 
 
+   This above picture explains the sales overview of the retail store, showing the amount of total no of sales and the sum of of total sales in each year.
+
+
 
 
 
