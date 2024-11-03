@@ -86,6 +86,105 @@ the formulas are;
 - WEST: =SUMIF(D:D, "WEST", H:H)
 - EAST: =SUMIF(D:D, "EAST", H:H)
 
+### SQL (STRUCTURED QUERY LANGUAGE)
+
+Here, i'm going to be writing some queries to extract key insights based on the following questions.
+
+1. retrieve the total sales for each product category.
+
+     ```SQL
+   
+       SELECT product, sum(total_sales) AS total
+       FROM [dbo].[Sales Data)
+       GROUP BY
+       product
+       ORDER BY
+       SUM(total_sales) DESC.
+        ```
+
+2.  Find the number of sales transactions in each region
+
+     ```SQL
+       SELECT region, COUNT(OrderID) AS number_of_sales_transactions
+       FROM [dbo].[sales data]
+       GROUP BY
+       Region
+       ```
+
+3.  Find the highest selling product by total sales
+
+     ```SQL
+        SELECT TOP 1 product, SUM(total_sales) AS total_sales_value
+        FROM [dbo].[sales data]
+        GROUP BY
+        product
+        ORDER BY
+        total_ sales_ value DESC
+      ```
+
+4.  Calculate total revenue per product
+
+     ```SQL
+        SELECT product, SUM(total_sales) AS total revenue
+        FROM [dbo].[sales data]
+        GROUP BY
+        product
+     ```
+
+5   Calculate monthly sales totals for the current year
+
+     ```SQL
+        SELECT DATENAME(MONTH, orderdate) AS Month, SUM(Total_sales) AS monthly_sales_total
+        FROM [dbo].[sales data)
+        WHERE
+        Orderdate >= DATEFROMPARTS (Year(GETDATE()),1,1)
+        AND
+        Orderdate < DATEFROMPARTS(Year(GETDATE()), +1,1,1)
+        GROUP BY
+        DateName (Month, Orderdate)
+        ORDER BY
+        Month.
+        ```
+
+6.  Find the top 5 customers by total purchaseamount.
+
+     ```SQL
+        SELECT TOP 5 CustomerID, SUM(Total_sales) AS total_purchase_amount
+         FROM [dbo].[sales data]
+         GROUP BY
+         CustomerID
+         OREDR BY
+         Total_purchase_amount DESC
+      ```
+     
+
+7.  Caluculate the percentage of total sales contributed by each region
+
+     ```SQL
+        SELECT Region, SUM(tptal_sales) AS total sales
+        ROUND(SUM(total_sales)/ SELECT SUM(total_sales)
+        FROM [dbo].[sales data]) * 100,2) AS percentage_of-total_sales
+        FROM [dbo].[sales date]
+        GROUP BY
+        region
+        ORDER BY
+        total sales DESC
+       ```
+
+
+8. Identify products with no sales in the last quater
+
+    ```SQL
+       SELECT product FROM [dbo].[sales data]
+       WHERE
+       product NOT IN (SELECT product FROM [dbo].[sales data]
+       WHERE
+       orderdate >= DATEADD(QUATER, -1, GETDATE())).
+      ```
+     
+     
+        
+
 
 
 
