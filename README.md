@@ -43,7 +43,7 @@ EDA involves examining and summarizing data to understand patterns, trends and c
  -  what marketing channels are most effective
 
 ### Data analysis
-As an analytic, you cleaan your data and prepare it for presentation.
+As an analytist, you cleaan your data and prepare it for presentation.
 with microsoft excel, i'm going to do an exploration of the sales performance data for a clearer and understandable presentation.
 
  ### EXCEL
