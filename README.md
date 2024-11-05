@@ -148,18 +148,17 @@ Here, i'm going to be writing some queries to extract key insights based on the 
 
 5   Calculate monthly sales totals for the current year
 
-     ```SQL
-        SELECT DATENAME(MONTH, order_date) AS Month, SUM(Total_sales) AS monthly_sales_total
-        FROM [dbo].[sales data]
-        WHERE
-        Order_date >= DATEFROMPARTS (YEAR(GETDATE()), 1, 1)
-        AND
-        Order-date < DATEFROMPARTS(YEAR(GETDATE()) +1, 1, 1)
-        GROUP BY
-        DATENAME (MONTH, Order_date)
-        ORDER BY
-        Month
-       ```
+
+  ```SQL
+    select DATENAME(MONTH, Orderdate) AS month,
+  sum(total_sales) AS monthly_sales_total
+  from [dbo].[sales data]
+  where OrderDate >= DATEFROMPARTS(YEAR(GETDATE()), 1, 1)
+   AND
+  OrderDate < DATEFROMPARTS(YEAR(GETDATE()) +1, 1, 1)
+   GROUP BY DATENAME(MONTH, OrderDate)
+  order by month
+  ```
 
 6.  Find the top 5 customers by total purchaseamount.
 
@@ -224,5 +223,8 @@ Here, i'm going to be writing some queries to extract key insights based on the 
    ![regional breakdowns](https://github.com/user-attachments/assets/b709b2a1-f820-45d3-8523-82f21cba2a2e)
 
    The picture explains the reional breakdowns of the sales with a table showing the details in the bar chart
+
+
+
 
 
