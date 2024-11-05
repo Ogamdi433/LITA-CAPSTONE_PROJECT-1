@@ -2,6 +2,18 @@
 
 ### Project Title: Sales Performance Analysis of a retail store
 
+ [Project Overview](#Project-Overview)
+ 
+ [Data sources](#Data-sources)
+ 
+ [Tools Used](#Tools-used)
+ 
+ [Data cleaning](#Data-cleaning)
+ 
+ [Exploratory data analysis (EDA)](#Exploratory-data-analysis)
+ 
+ [Data analysis](#Data-analysis)
+
 ### Project Overview
  This sales pereformance analysis provides an in-depth examination of a retail store's sales trends, identfying areas of strength and opportunities for growth. the analysis covers time period, focusing on key performance indicators (KPIs) such as sales revenue, product category performance, customer demographics, and geographical sales distribution.
 
@@ -28,11 +40,6 @@ the tools used for this project are;
   1. identify errors
   2. correct errors manually or using algorithms
   3. verify corrections
-- data transformation
-  1. aggregate data (e.g, group by, pivot)
-  2. merge datasets
-  3. transpose data
--data validation
 
 ### Exploratory data analysis (EDA)
 EDA involves examining and summarizing data to understand patterns, trends and corrections. here is a comprehensive EDA checklist.
@@ -222,7 +229,12 @@ Here, i'm going to be writing some queries to extract key insights based on the 
 
    ![regional breakdowns](https://github.com/user-attachments/assets/b709b2a1-f820-45d3-8523-82f21cba2a2e)
 
-   The picture explains the reional breakdowns of the sales with a table showing the details in the bar chart
+   The picture explains the reional breakdowns of the sales with a table showing the details in the bar chart.
+
+     In conclusion, based on the sales analysis of the retail, it has revealed valuable insights into the store's performance. the summaries provided have helped identify:
+   -  total sales and average order value
+   -  best selling regions and products
+   -  sales trends by month
 
 
 
